@@ -48,10 +48,10 @@ const about = () => {
 								Biography
 							</h2>
 							<p className="font-medium">
-							Hello, I am Tushar, a fullstack blockchain developer with a passion for crafting secure, efficient, and decentralized solutions. With 1 years of experience in the field, I constantly seek innovative approaches to materialize my clients' visions using blockchain technology. My focus lies in creating beautiful, functional, and user-centered digital experiences on the blockchain platform. Let's revolutionize the world together with the power of blockchain!
+							{"Hello, I am Tushar, a fullstack blockchain developer with a passion for crafting secure, efficient, and decentralized solutions. With 1 years of experience in the field, I constantly seek innovative approaches to materialize my clients' visions using blockchain technology. My focus lies in creating beautiful, functional, and user-centered digital experiences on the blockchain platform. Let's revolutionize the world together with the power of blockchain!"}
 							</p>
 							<p className="my-4 font-medium">
-							As a fullstack blockchain developer, I firmly believe that design goes beyond aesthetics; it's about addressing challenges and crafting intuitive, delightful experiences for users in the decentralized world. Just as in traditional development, solving problems efficiently and user-centrically remains paramount in the blockchain realm. Let's merge the power of blockchain technology with exceptional design to create transformative and user-friendly solutions.{' '}
+							{"As a fullstack blockchain developer, I firmly believe that design goes beyond aesthetics; it's about addressing challenges and crafting intuitive, delightful experiences for users in the decentralized world. Just as in traditional development, solving problems efficiently and user-centrically remains paramount in the blockchain realm. Let's merge the power of blockchain technology with exceptional design to create transformative and user-friendly solutions."}{' '}
 							</p>
 							
 						</div>
