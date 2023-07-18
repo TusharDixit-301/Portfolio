@@ -3,7 +3,9 @@ import { GithubIcon } from '@/components/Icons';
 import Layout from '@/components/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import BlockChat3 from '../../public/images/projects/BlockChat3.png';
+import NFTMarketplace from '../../public/images/projects/NFTMarketplace1.png';
+import RollIt from '../../public/images/projects/RollIt.png';
 
 const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
 	return (
@@ -56,7 +58,7 @@ const FeaturedProjects = ({ type, title, summary, img, link, github }) => {
 	);
 };
 
-const Project = ({ type, title, img, link, github }) => {
+const Project = ({ type, title, img, link, github, summary }) => {
 	return (
 		<article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light xs:p-4">
 			<div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl bg-sky-700 md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
@@ -80,6 +82,9 @@ const Project = ({ type, title, img, link, github }) => {
 						{title}
 					</h2>
 				</Link>
+				<p className="my-2 font-medium text-dark dark:text-white sm:text-sm">
+					{summary}
+				</p>
 
 				<div className="w-full justify-between mt-2 flex items-center">
 					<Link
@@ -117,57 +122,30 @@ const projects = () => {
 						<div className="col-span-12 hover:scale-105 transition-all duration-500 ease-in-out">
 							<FeaturedProjects
 								type="Featured Project"
-								title="Crypto Screener Application"
-								summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-								img={project1}
-								link="/"
-								github="/"
+								title="WOW Marketplace"
+								summary="A NFT marketplace built on the zkSyncEra network, offering efficient and cost-effective transactions for digital assets. Empowering users with a seamless experience, it enables easy buying, selling, and trading of NFTs within a decentralized and secure ecosystem."
+								img={NFTMarketplace}
+								link="https://zk-sync-marketplace.vercel.app/"
+								github="https://github.com/TusharDixit-301/zkSync-Marketplace"
 							/>
 						</div>
+
 						<div className="col-span-6 sm:col-span-12 hover:scale-105 transition-all duration-500 ease-in-out">
 							<Project
-								type="Featured Project"
-								title="Crypto Screener Application"
-								img={project1}
-								link="/"
-								github="/"
+								summary="A web application that allows users to create and share their own custom memes. It also allows users to view and download memes created by other users."
+								title="Roll It"
+								img={RollIt}
+								link="https://tushardixit-301.github.io/Roll-It/"
+								github="https://github.com/TusharDixit-301/Roll-It"
 							/>
 						</div>
-						<div className="col-span-6 sm:col-span-12 hover:scale-105 transition-all duration-500 ease-in-out">
+						<div className="col-span-6 sm:col-span-12 hover:scale-105 transition-all duration-800 ease-in">
 							<Project
-								type="Featured Project"
-								title="Crypto Screener Application"
-								img={project1}
-								link="/"
-								github="/"
-							/>
-						</div>
-						<div className="col-span-12 hover:scale-105 transition-all duration-500 ease-in-out">
-							<FeaturedProjects
-								type="Featured Project"
-								title="Crypto Screener Application"
-								summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts.It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
-								img={project1}
-								link="/"
-								github="/"
-							/>
-						</div>
-						<div className="col-span-6 sm:col-span-12 hover:scale-105 transition-all duration-500 ease-in-out">
-							<Project
-								type="Featured Project"
-								title="Crypto Screener Application"
-								img={project1}
-								link="/"
-								github="/"
-							/>
-						</div>
-						<div className="col-span-6 sm:col-span-12 hover:scale-105 transition-all duration-500 ease-in-out">
-							<Project
-								type="Featured Project"
-								title="Crypto Screener Application"
-								img={project1}
-								link="/"
-								github="/"
+								summary="Blockchat is a blockchain-based online chat service, ensuring secure and decentralized communication, preserving user privacy and data integrity."
+								title="Blockchat"
+								img={BlockChat3}
+								link="https://block-chat.vercel.app/"
+								github="https://github.com/TusharDixit-301/BlockChat"
 							/>
 						</div>
 					</div>

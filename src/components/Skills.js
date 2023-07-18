@@ -37,14 +37,15 @@ const Skills = () => {
 				<Skill name="ReactJS" x="-29vw" y="8vw" />
 				<Skill name="NextJS" x="20vw" y="-10vw" />
 				<Skill name="ExpressJS" x="-1vw" y="11vw" />
-				<Skill name="NodeJS" x="6vw" y="-19vw" />
-				<Skill name="NestJS" x="-5vw" y="18.8vw" />
+				<Skill name="NodeJS" x="6vw" y="-18vw" />
+				<Skill name="GraphQl" x="-5vw" y="18.8vw" />
 				<Skill name="Solidity" x="-34vw" y="-10vw" />
 				<Skill name="Python" x="-26vw" y="1vw" />
-				<Skill name="Rust" x="26vw" y="1vw" />
+				<Skill name="Supabase" x="26vw" y="1vw" />
 				<Skill name="HardHat" x="-20vw" y="-15vw" />
 				<Skill name="etherJS" x="24vw" y="18vw" />
 				<Skill name="Wagmi" x="37.2vw" y="-2vw" />
+				<Skill name="Foundry" x="-23vw" y="18vw" />
 			</div>
 		</>
 	);
